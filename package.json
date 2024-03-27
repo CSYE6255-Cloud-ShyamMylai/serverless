@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@google-cloud/cloud-sql-connector": "^1.2.4",
+    "@google-cloud/functions-framework": "^3.0.0",
+    "@google-cloud/pubsub": "^4.3.3",
+    "@google-cloud/storage": "^7.9.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "mailgun.js": "^10.2.1",
+    "mysql2": "^3.9.2",
+    "sequelize": "^6.37.1",
+    "sequelize-tokenify": "^0.2.4"
+  }
+}
