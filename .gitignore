@@ -177,3 +177,5 @@ serverless.zip
 
 
 .DS_Store
+
+.gcloudignore
