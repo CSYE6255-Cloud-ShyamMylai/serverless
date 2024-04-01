@@ -48,6 +48,11 @@ const User = sequelize.define('User', {
         allowNull: true,
         defaultValue: null
     },
+    expiryTimeStamp: {
+        type: DataTypes.DATE,
+        allowNull: true,
+        defaultValue: null
+    },
 },
     {
         timestamps: true,
