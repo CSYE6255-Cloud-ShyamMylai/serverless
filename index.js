@@ -39,7 +39,8 @@ functions.cloudEvent('sendEmailVerification', async (cloudEvent) => {
       const user = await User.findOne({ where: { username: email } });
       if (user) {
         console.log("User found");
-        const res = await user.update({ emailSentTimeStamp: new Date() });
+        const res = await user.update({ emailSentTimeStamp: new Date(),
+        expiryTimeStamp: new Date(Date.now() + 2 * 60000) });
         console.log('User createdAt', res.dataValues.account_created);
         console.log('User updatedAt', res.dataValues.account_updated);
         console.log('User email sent at', res.dataValues.emailSentTimeStamp);
